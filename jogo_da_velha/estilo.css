@@ -1,0 +1,17 @@
+.tabela div{
+    width: 100px;
+    height: 100px;
+}
+
+.borda-esquerda{
+    border-bottom: solid 1px red;
+    border-right: solid 1px red;
+}
+
+.borda-direita{
+    border-bottom: solid 1px red;
+}
+
+.borda-baixo{
+    border-right: solid 1px red;
+}

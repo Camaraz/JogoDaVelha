@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Jogo da velha</title>
+		<link rel="stylesheet" href="estilo.css">
+		<script src="jquery-2.2.1.js"></script>
+		<script src="jogo.js"></script>
+	</head>
+
+	<body>
+
+		<div id="pagina-inicial">
+			<table align="center" width="600px">
+				<tbody>
+					<tr>
+						<td colspan="3" align="center">JOGO DA VELHA</td>
+					</tr>
+					<tr>
+						<td align="center"> <img src="imagens/jogador_1.png">
+							<br><input id="player1" type="text" maxlength="10" placeholder="Nome jogador 1" style="margin-bottom: 5px; border: 0px;">
+						</td>
+
+						<td align="center">
+							<img src="imagens/iniciar.png" id="botaoInicio">
+						</td>
+
+						<td align="center"><img src="imagens/jogador_2.png" alt="">
+							<br><input id="player2" type="text" maxlength="10" placeholder="Nome jogador 2" style="margin-bottom: 5px; border: 0px;">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="area-jogo" style="text-align: center; display: none;" >
+			<div style="display: inline-block;">
+				<img src="imagens/jogador_1.png">
+				<br><span id="show_player1"></span>
+			</div>
+
+			<div style="display: inline-block;">
+				<table border="0" class="tabela">
+
+					<tr>
+						<td class="borda-esquerda">
+							<div class="jogada" id="a-1"></div>
+						</td>
+						<td class="borda-esquerda">
+							<div class="jogada" id="a-2"></div>
+						</td>
+						<td class="borda-direita">
+							<div class="jogada" id="a-3"></div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="borda-esquerda">
+							<div class="jogada" id="b-1"></div>
+						</td>
+						<td class="borda-esquerda">
+							<div class="jogada" id="b-2"></div>
+						</td>
+						<td class="borda-direita">
+							<div class="jogada" id="b-3"></div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="borda-baixo">
+							<div class="jogada" id="c-1"></div>
+						</td>
+						<td class="borda-baixo">
+							<div class="jogada" id="c-2"></div>
+						</td>
+						<td>
+							<div class="jogada" id="c-3"></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<div style="display: inline-block;">
+				<img src="imagens/jogador_2.png">
+				<br><span id="show_player2"></span>
+			</div>
+
+			
+			<div style="text-align: center; font-size: 20px;">
+				Turno do jogador: <span id="turno-player"></span>
+			</div>
+		</div>
+	</body>
+</html>
